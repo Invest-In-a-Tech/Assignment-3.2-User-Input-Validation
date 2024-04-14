@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1>Signup to Win the Big Bucks!</h1>
+	<p id="demo">User Signup</p>
+
+
+		<!-- the registrationForm id is linked to the custom function in JS-->
+		<form id="registrationForm" class="registrationForm" onsubmit="validateForm()">
+
+			<!-- the for attribute in the label tag is linked to the id of the input tag -->
+			<!-- the required attribute is used to make the input field mandatory -->
+			<label for="firstName">First name:</label>
+			<input type="text" id="firstName" name="firstName" required><br><br>
+
+			<!-- the for attribute in the label tag is linked to the id of the input tag -->
+			<!-- the required attribute is used to make the input field mandatory -->
+			<label for="lastName">Last name:</label>
+			<input type="text" id="lastName" name="lastName" required><br><br>
+
+			<!-- the for attribute in the label tag is linked to the id of the input tag -->
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required><br><br>
+
+			<!-- the for attribute in the label tag is linked to the id of the input tag -->
+			<label for="confirmPassword">Confirm Password:</label>
+			<input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+
+			<input type="submit" value="Submit">
+		
+		</form>
+
+	<!-- the scripts.js file is linked to the HTML file -->
+	<script src="scripts.js"></script>
+
+</body>
+</html>
